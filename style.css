@@ -43,6 +43,35 @@ h3{
   font-size: 2rem;
 }
 
+@media screen and (max-width: 1020px) {
+  .me{
+    width: 25vw;
+  }
+  p, li{
+    font-size: 1rem;
+  }
+  h3, h2{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .me{
+    width: 35vw;
+  }
+  p, li{
+    font-size: 1rem;
+  }
+  h3, h2{
+    font-size: 1.5rem;
+  }
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 hr{
   background-color:#9AABA2;
   height: 2px;
@@ -74,6 +103,11 @@ hr{
   margin-bottom: 5%;
 }
 
+@media screen and (max-width: 1020px) {
+  .name{
+    padding-left: 3vw;
+  }
+}
 .about{
   text-align:end;
   width: 80%;
@@ -140,21 +174,31 @@ hr{
 .skills_list{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .skills_list li{
   align-self: center;
   font-size: 1.2em;
   font-weight: 600;
+  padding: 10px;
 }
 
 .example__wrapper{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1020px) {
+  .example__wrapper{
+    justify-content: center;
+  }
 }
 
 .example{
   padding: 5px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
